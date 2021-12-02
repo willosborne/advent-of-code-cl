@@ -30,7 +30,15 @@
                  (:file "day-2")
                  (:file "day-3")
                  (:file "day-4")
-                 (:file "day-5"))))
+                 (:file "day-5")))
+
+               (:module "2021"
+                :serial t
+                :depends-on ("src")
+                :components
+                ((:file "day-1")
+                 ))
+               )
   :description ""
   :in-order-to ((test-op (test-op "aoc/tests"))))
 

@@ -191,12 +191,7 @@
          (mode-chars (reverse (coerce (str:substring 0 3 padded) 'list)))
          (param-modes (mapcar #'parse-mode-char mode-chars))
          (op (gethash code *ops-by-code*))
-         ;; (params (coerce (subseq data
-         ;;                         (+ index 1)
-         ;;                         (+ index 1 (operation-num-params op)))
-         ;;                 'list))        ;
-         (params (get-param-indices index (operation-num-params op)))
-         )
+         (params (get-param-indices index (operation-num-params op))))
     (make-instruction :operation (operation-name op)
                       :params params
                       :param-modes param-modes)))
