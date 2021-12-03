@@ -49,3 +49,11 @@
     (str:lines)
     (mapcar #'parse-command)
     (run-program-aim)))
+
+
+
+(loop [a 10
+       total 1]
+         (if (> a 1)
+             (recur (- a 1) (* total a))
+             total))
