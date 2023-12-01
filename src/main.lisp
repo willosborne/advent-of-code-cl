@@ -1,6 +1,5 @@
 (defpackage aoc
-  (:use :cl :sqlite :maxpc)
-  (:export get-input))
+  (:use :cl :sqlite)
+  (:export #:get-input))
+
 (in-package :aoc)
-
-
