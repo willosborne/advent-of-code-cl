@@ -44,7 +44,8 @@
                 :serial t
                 :components
                 ((:file "day-1")
-                 (:file "day-2")))
+                 (:file "day-2")
+                 (:file "day-3")))
                )
   :description ""
   :in-order-to ((test-op (test-op "aoc/tests"))))
