@@ -23,7 +23,8 @@
                 :components
                 ((:file "main")
                  (:file "cookies")
-                 (:file "aoc-api")))
+                 (:file "aoc-api")
+                 (:file "utils")))
                ;; (:module "2019"
                ;;  :serial t
                ;;  :depends-on ("src")
