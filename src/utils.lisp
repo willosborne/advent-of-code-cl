@@ -1,6 +1,6 @@
 (defpackage :utils
   (:use :cl)
-  (:export #:for-adjacents))
+  (:export #:for-adjacents #:lists-equal-any-order))
 (in-package :utils)
 
 (defparameter adjacencies
