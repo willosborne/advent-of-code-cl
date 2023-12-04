@@ -14,6 +14,7 @@
                "access"
                "cl-ppcre"
                "maxpc"
+               "arrows"
                "rutils"
                "str"
                "cl-json"
@@ -46,7 +47,8 @@
                 :components
                 ((:file "day-1")
                  (:file "day-2")
-                 (:file "day-3")))
+                 (:file "day-3")
+                 (:file "day-4")))
                )
   :description ""
   :in-order-to ((test-op (test-op "aoc/tests"))))

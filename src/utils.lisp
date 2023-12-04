@@ -29,6 +29,10 @@
           )))
 
 
+(defun lists-equal-any-order (l1 l2)
+  (null (set-exclusive-or l1 l2)))
+
+
 ;; (defvar test-grid (make-array '(4 4) :initial-contents '((1 2 3 4)
 ;;                                                          (5 6 7 8)
 ;;                                                          (4 3 2 1)
