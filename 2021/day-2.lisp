@@ -1,5 +1,5 @@
 (defpackage aoc-2021-2
-  (:use :cl :arrow-macros :rutils.bind :rutils.symbol :rutils.readtable :lol :1am))
+  (:use :cl :arrow-macros :rutils.bind :rutils.symbol :rutils.readtable :1am))
 (in-package :aoc-2021-2)
 
 (named-readtables:in-readtable rutils.readtable:rutils-readtable)
