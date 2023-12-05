@@ -1,6 +1,6 @@
 (defpackage :utils
   (:use :cl)
-  (:export #:for-adjacents #:lists-equal-any-order))
+  (:export #:for-adjacents #:lists-equal-any-order #:to-keyword))
 (in-package :utils)
 
 (defparameter adjacencies
@@ -48,3 +48,6 @@
 ;;                    (if (= 5 cell)
 ;;                        (return-from digit-adjacent? t)))))
 ;; (defmacro for-adjacents (&key (include-centre nil))) ;
+
+(defun to-keyword (string)
+  (intern (string-upcase string) 'keyword))
