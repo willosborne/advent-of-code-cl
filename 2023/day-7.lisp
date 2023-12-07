@@ -42,3 +42,17 @@
   (is eql :two-pair (hand-type "23432"))
   (is eql :one-pair (hand-type "A23A4"))
   (is eql :high-card (hand-type "23456")))
+
+(defun card-char-to-number (ch)
+  (or (digit-char-p ch)
+      (case ch
+        (#\T 10)
+        (#\Q 11)
+        (#\K 12)
+        (#\A 13))))
+
+(define-test parse-chars
+  :parent day-7)
+
+(defun card-value-greater? (v1 v2)
+  )
