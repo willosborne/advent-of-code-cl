@@ -10,7 +10,9 @@
           (format t "No input for this year/day - is it up yet?")
           body))))
 
-(defparameter *db-location* (uiop:native-namestring "~/common-lisp/aoc/inputs.db"))
+(defparameter *db-location*
+  (merge-pathnames (asdf:system-source-directory "aoc")
+                   #P"inputs.db"))
 
 (defun setup-db ()
   (if (probe-file *db-location*)
