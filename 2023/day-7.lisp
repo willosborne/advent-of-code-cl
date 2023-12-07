@@ -45,14 +45,23 @@
 
 (defun card-char-to-number (ch)
   (or (digit-char-p ch)
-      (case ch
+      (ccase ch
         (#\T 10)
-        (#\Q 11)
-        (#\K 12)
-        (#\A 13))))
+        (#\J 11)
+        (#\Q 12)
+        (#\K 13)
+        (#\A 14))))
 
 (define-test parse-chars
-  :parent day-7)
+  :parent day-7
+  (is = 7 (card-char-to-number #\7))
+  (is = 10 (card-char-to-number #\T))
+  (is = 11 (card-char-to-number #\J))
+  (is = 12 (card-char-to-number #\Q))
+  (is = 13 (card-char-to-number #\K))
+  (is = 14 (card-char-to-number #\A))
+
+  )
 
 (defun card-value-greater? (v1 v2)
   )
