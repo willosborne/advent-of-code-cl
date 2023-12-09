@@ -51,7 +51,8 @@
                  (:file "day-4")
                  (:file "day-5")
                  (:file "day-6")
-                 (:file "day-7"))
+                 (:file "day-7")
+                 (:file "day-8"))
                 )
                )
   :description ""
